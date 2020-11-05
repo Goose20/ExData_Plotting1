@@ -1,3 +1,5 @@
+temp <- tempfile()
+download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",temp)
 power <- read.table(unz(temp,"household_power_consumption.txt"), 
                     sep=";", 
                     header = T, 
